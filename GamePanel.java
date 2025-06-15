@@ -10,6 +10,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.security.SecureRandom;
 
 import javax.swing.JPanel;
 import javax.swing.*;
@@ -32,7 +33,7 @@ public class GamePanel extends JPanel implements ActionListener{
 	Random random;
 	
 	public GamePanel(){
-		random = new Random();
+		random = new SecureRandom();
 		this.setPreferredSize(new Dimension(SCREEN_WIDTH ,SCREEN_HEIGHT));
 		this.setBackground(Color.black);
 		this.setFocusable(true);
